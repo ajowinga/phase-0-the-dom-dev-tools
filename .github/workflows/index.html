@@ -1,0 +1,35 @@
+
+GOALS
+<!-- Demonstrate viewing the DOM through Chrome DevTools -->
+updating the DOM updates the browsers rendered page 
+<!-- Select an element with Chrome DevTools -->
+inspect web page 
+elements on devTools 
+Disclosure triangles expand content 
+navigaate
+<!-- Delete an element with Chrome DevTools -->
+highlight and  press delete key
+<!-- Demonstrate that the source is not changed when the DOM is -->
+changes in the DOM odont affect HTML file on server. Sourcs doesnt change when DOM is changed
+view page source- different from "inspect"
+<!-- Demonstrate opening the DevTools' JavaScript console -->
+console tab 
+ type document "enter"
+ when you hover ontop, whole doc is highlighted
+ expand using Disclosure triangle(same HTML in elements console)
+
+ in this case, document === object (has properties and methods(used to return elements(document.querySelector)))
+<!-- Select an element with JavaScript -->
+console tab 
+document.querySelector (when we Selectan element it returns the DOM node (JS object))
+<!-- Delete an element with JavaScript -->
+method chaining (.notation) removes our node from the DOM 
+document.querySelector("h1").remove() 
+
+<!-- Storing node references in variables -->
+Query methods (document.querySelector) are expressions
+expressions return a value(specifically a DOM value)
+results(value) of the query can be saved into a variables
+
+const header = document.querySelector("h1") 
+we referrence header to that node and use it to refer to our node
